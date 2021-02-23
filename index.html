@@ -1,1 +1,39 @@
-<h1>Witaj na mojej stronie</h1>
+<body>
+	<h1 id="powitanie">
+		Witaj!
+	</h1>
+	
+	<p id="akapit">
+		To jest akapit tekstu na stronie.
+	</p>
+	
+	<button onclick="document.getElementById('akapit').style.fontSize='50px';">
+		Kliknij mnie!
+	</button>
+	
+	<button onclick="zmiana()">
+		Też mnie kliknij!
+	</button>
+	
+	<script>
+		// Polecenie alert wyświetla komunikat w formie wyskakującego okienka
+		// alert("Hej! To moja strona!");
+		
+		// Wypisujemy komunikat w konsoli
+		console.log("Komunikat w konsoli");
+		
+		document.getElementById("powitanie").innerHTML="Moja strona!";
+		document.getElementById("powitanie").style.color = "red";
+		
+		//var rozmiar = 10;
+		
+		function zmiana() {
+			//document.getElementById("akapit").style.fontSize = rozmiar + "px";
+			//rozmiar = rozmiar + 5;
+			document.getElementById("akapit").style.fontSize = "8px";
+			document.getElementById("akapit").style.color = "blue";
+		}	
+
+		
+	</script>
+</body>
